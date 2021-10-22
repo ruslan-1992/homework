@@ -1,0 +1,35 @@
+.color{
+    display:block;
+position: relative;
+width: 1000px;
+height: 1000px;
+margin: 0 auto;
+}
+
+.color1{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin-left: 30%;
+    margin-top: 30%;
+    background: red;
+    z-index: 2;
+}
+.color2{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin-left: 40%;
+    margin-top: 40%;
+    background: yellow;
+    z-index: 3;
+}
+.color3{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin-left: 50%;
+    margin-top: 50%;
+    background: blue;
+    z-index: 1;
+}
