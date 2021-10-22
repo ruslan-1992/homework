@@ -102,6 +102,8 @@
 
 .title__item>a:hover {
     background: rgb(69, 7, 240);
+    border-radius: 30px;
+    transition: 1s;
 }
 
 .title__item>a:active {
@@ -209,9 +211,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 37px 0 101px 0;
-}
-
-.skills__article {
 }
 
 .skills__title {
@@ -372,12 +371,17 @@ background: url(./icon/view.svg) 0 0 no-repeat;
     background: #EEEFF1;
 }
 .form__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 564px;
     width: 540px;
 }
-.form__header {
-    
+.form__header{
+    margin: 0 0 50px 0;
 }
+
 .form__title {
     font-weight: 500;
     font-size: 32px;
@@ -393,12 +397,80 @@ background: url(./icon/view.svg) 0 0 no-repeat;
     color: #727272;
 }
 form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-form>input{
+.form__input>input{
     width: 255px;
     height: 50px;
+    padding: 0 0 0 20px;
+    margin: 0 17px 0 17px;
+    border: none;
+}
+.form__input{
+    display: flex;
+    margin: 0 0 20px 0;
+}
+div>input{
+    font-size: 14px;
+}
+
+textarea{
+    width: 563px;
+height: 175px;
+font-size: 14px;
+padding: 17px 0 0 20px;
+margin: 0 0 50px 0;
+border: none;
 }
 .button{
     width: 190px;
     height: 55px;
+    margin: 0 auto;
+    border: none;
+    background: #34547A;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.button:hover {
+    background: rgb(69, 7, 240);
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.button:active {
+    position: relative;
+    top: 4px;
+    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    height: 151px;
+    display: flex;
+    justify-content: center;
+    background: #34547A;
+}
+.footer__content {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 50px 0 50px 0;
+}
+.footer__name {
+    font-weight: 500;
+font-size: 21px;
+color: #FFFFFF;
+    margin: 0 757px 0 0px;
+}
+.footer__name>p:nth-child(2){
+    font-size: 13px;
+}
+.footer__icon {
+    width: 175px;
+height: 40px;
+    display: flex;
+    justify-content: space-between;
 }

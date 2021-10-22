@@ -33,7 +33,7 @@
                         <div class="item__body">Lorem Ipsum - это текст-"рыба", часто используемый в печати и <br>
                             вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
                             века.</div>
-                        <a class="item__button" href="">написать мне</a>
+                        <a class="item__button" href="" onclick="return false">написать мне</a>
                     </div>
                 </div>
             </div>
@@ -157,13 +157,28 @@
                     <p class="form__title">Хотите веб-сайт?</p>
                     <p class="form__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p> 
                 </div>
-                <form action="#">
-                    <input type="text" name="user" id="">
-                    <input type="password" name="password" id="">
-                    <textarea name="text" id="" cols="30" rows="10"></textarea>
-                </form>
-                <div class="form__button">
-                    <input class="button" type="submit" value="Отправить">
+                <form action="">
+                    <div class="form__input">
+                        <input placeholder="Ваше имя" class="form__user" type="text" name="user" id="">
+                        <input placeholder="Ваш e-mail" class="form__mail" type="mail" name="mail" id="">
+                    </div>
+                    <textarea placeholder="Сообщение" name="text" id="" cols="" rows=""></textarea>
+                    <div class="form__button">
+                    <input class="button" type="submit" value="Отправить" onclick="return false">
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__content">
+                <div class="footer__name">
+                    <p>Иванов Иван</p>
+                    <p>(с) 2018. Все права защищены.</p>
+                </div>
+                <div class="footer__icon">
+                    <a href="" onclick="return false"><img src="./icon/vk-social-network-logo.svg" alt=""></a>
+                    <a href="" onclick="return false"><img src="./icon/vk-social-network-logo.svg" alt=""></a>
+                    <a href="" onclick="return false"><img src="./icon/vk-social-network-logo.svg" alt=""></a>
                 </div>
             </div>
         </div>
