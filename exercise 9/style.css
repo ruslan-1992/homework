@@ -24,8 +24,6 @@
     grid-column: 3 / 4;
 }
 
-.header__list {}
-
 @media(min-width: 992px) {
     .header {
         display: grid;
@@ -62,7 +60,6 @@
     transition-duration: 0.5s;
     border: 2px solid blue;
     color: blue;
-
 }
 
 .header__list>a:nth-child(1) {
