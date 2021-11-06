@@ -16,7 +16,7 @@ body {
 
 .header__image {
    background-image: url(./images/image\ 1.jpg);
-   width: 1920px;
+   max-width: 1920px;
    height: 900px;
 }
 
@@ -54,12 +54,10 @@ body {
    font-size: 16px;
    width: 107px;
 }
-.nav__line>a:hover{
-   font-size: 18px;
-}
+
 
 .nav__line:hover {
-   padding: 0 0 39px 0;
+   padding: 0 0 33px 0;
    border-bottom: 2px solid #FFFFFF;
 }
 

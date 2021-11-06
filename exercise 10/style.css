@@ -8,9 +8,7 @@
   -ms-grid-rows: minmax(80px, auto) 1fr minmax(397px, auto);
   -ms-grid-columns: 1fr;
       grid-template: minmax(80px, auto) 1fr minmax(397px, auto)/1fr;
-      grid-template-areas: "header"
- "main"
- "footer";
+      grid-template-areas: "header" "main" "footer";
 }
 
 .wrapper .header {
