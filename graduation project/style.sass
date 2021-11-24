@@ -25,14 +25,15 @@ body
 .content
     margin: 0 auto  
 .header
-   
+
 .header__logo>img
     max-width: 100%
+    padding: 0 0 0 0px
 
 .header__burger
     display: none
 
-@media screen and ( max-width: 767px )
+@media ( max-width: 768px )
     .header__burger
         display: block
         position: relative
@@ -75,1217 +76,30 @@ body
         letter-spacing: 0.2px
         color: #2091F9
         margin: 0 35px 0 20px
+    .header__logo-nav-form >.header__nav
+        display: none 
     .header__nav>.nav__link
         display: none
     .header__email,.header__button
         display: none
-    .header__logo-nav-form
-        width: 100%
-        display: flex
-        align-items: center
-        justify-content: center
-        flex-wrap: wrap
-        padding: 15px 0
-    .header__nav
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-    .header__content
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        color: #FFFFFF
-        margin-top: 80px
-    .header__content-title
-        font-weight: normal
-        font-size: 55px
-        letter-spacing: 0.7px
-        padding: 30px 0
-    .header__content-screen
-        display: flex
-        justify-content: center
-        margin: 90px 0 0 0
-
-    // main
-
-    .offer
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        margin: 140px 0 307px 0
-
-    .offer__title
-        text-align: center
-        color: #FFFFFF
-        margin: 95px 0 50px 0
-
-    .offer__title>p
-        margin: 0
-        &:nth-child(1)
-            font-size: 22px
-            line-height: 33px
-            letter-spacing: 0.4px
-        &:nth-child(2)
-            font-weight: normal
-            font-size: 46px
-            line-height: 57px
-            letter-spacing: 0.9px
-            margin: 17px 0
-        &:nth-child(3)
-            max-width: 318px
-            font-weight: 500
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-            margin: 0 auto
-
-    .offer__button
-        display: flex
-        flex-wrap: wrap
-        margin-top: 50px
-
-    .offer__button-buy
-        width: 124px
-        height: 52px
-        border-radius: 35px
-        background: #FFFFFF
-        letter-spacing: 0.2px
-        font-weight: bold
-        font-size: 16px
-        display: flex
-        align-items: center
-        justify-content: center
-        margin-top: 90px
-        color: #2091F9
-        text-decoration: none
-        margin: 0 8px 0 0
-
-    .offer__button-free
-        width: 172px
-        height: 52px
-        border-radius: 35px
-        border: 1px solid #FFFFFF
-        box-sizing: border-box
-        letter-spacing: 0.2px
-        font-weight: bold
-        font-size: 16px
-        display: flex
-        align-items: center
-        justify-content: center
-        margin-top: 90px
-        color: #FFFFFF
-        text-decoration: none
-        margin: 0 0 0 8px
-
-    .subscribe
-        display: flex
-        align-items: center
-        justify-content: center
-        flex-wrap: wrap
-        margin: 0 0 95px 0px
-        
-    .subscribe__image>img
-        max-width: 100%
-        margin: 0 40px 0 0
-    .subscribe__side
-        display: flex
-        flex-direction: column
-        max-width: 470px
-        color: #FFFFFF
-        margin: 0 0 0 40px
-
-    .subscribe__side-text
-        max-width: 100%
-
-    .subscribe__side-text>p
-        margin: 0 
-        &:nth-child(1)
-            font-weight: 500
-            font-size: 22px
-            line-height: 33px
-            letter-spacing: 0.1px
-
-        &:nth-child(2)
-            font-size: 46px
-            line-height: 57px
-            letter-spacing: 0.2px
-            padding: 17px 0 35px 0
-
-        &:nth-child(3)
-            font-weight: 500
-            font-size: 22px
-            line-height: 33px
-            letter-spacing: 0.1px
-
-        &:nth-child(4)
-            font-size: 18px
-            line-height: 27px
-            letter-spacing: 0.2px
-
-    .subscribe__form
-        padding-top: 35px
-            
-    .subscribe__email
-        height: 54px
-        width: 273px
-        border-radius: 28px
-        border: none
-        padding: 0 0 0 35px
-        background: #EFEFEF
-        &::placeholder
-            font-size: 14px
-            line-height: 16px
-            letter-spacing: 0.1px
-            color: #18171D
-
-
-    .subscribe__button
-        height: 54px
-        width: 141px
-        border-radius: 28px
-        border: none
-        background: #FFFFFF
-        margin: 0 0 0 12px
-        color: #2091F9
-        font-weight: 600
-        font-size: 16px
-        letter-spacing: 0.2px          
-
-    .features
-        display: flex
-        flex-direction: column
-        align-items: center
-        margin: 0 0 350px 0
-
-    .features__item-title
-        text-align: center
-        max-width: 318px
-        color: #FFFFFF
-        margin: 0 0 130px 0
-
-    .features__item-title>p
-        margin: 0
-        &:nth-child(1)
-            font-weight: 600
-            font-size: 22px
-            line-height: 33px
-            letter-spacing: 0.4px
-        &:nth-child(2)
-            font-weight: normal
-            font-size: 46px
-            line-height: 57px
-            letter-spacing: 0.9px
-            margin: 17px 0
-        &:nth-child(3)
-            font-weight: 500
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-            margin: 0 auto
-
-    .features__item-body
-        display: flex
-        justify-content: center
-        flex-wrap: wrap
-        width: 100%
-    .body__image>img
-        max-width: 100%
-        margin: 0 40px 0 0
-
-
-    .body__side
-        display: flex
-        justify-content: space-evenly
-        align-items: center
-        flex-direction: column
-        max-width: 255px
-        color: #FFFFFF
-        margin: 0 0 0 40px
-
-    .body__side-text>p
-        margin: 0
-
-    .side__text-title
-        background-image: url("./icon/ic_round-restaurant-menu.svg")
-        background-repeat: no-repeat
-        padding: 5px 0 0 50px
-        height: 53px
-        font-style: normal
-        font-weight: bold
-        font-size: 22px
-        line-height: 33px
-        letter-spacing: 0.6px
-
-    .side__text-body
-        font-weight: normal
-        font-size: 18px
-        line-height: 27px
-        letter-spacing: 0.2px
-        
-    .partners 
-        width: 100%
-        display: flex
-        flex-direction: column
-        align-items: center
-        margin: 0 0 200px 0
-
-    .partners__item-title>p
-        margin: 0
-        color: #FFFFFF
-        &:nth-child(1)
-            font-size: 46px
-            line-height: 57px
-            text-align: center
-            letter-spacing: 0.2px
-        &:nth-child(2)
-            max-width: 318px
-            font-weight: 500
-            font-size: 16px
-            line-height: 20px
-            text-align: center
-            letter-spacing: 0.2px
-            padding-top: 25px
                 
-    .partners__items-logo
-        display: flex
-        align-items: center
-        flex-wrap: wrap
-        margin: 100px 0
-
-    .partners__logo-link
-        padding: 0 40px
-
-    .partners__item-button
-        width: 236px
-        height: 65px
-        background-color: #2091F9
-        border-radius: 35px
-        text-decoration: none
-        display: flex
-        justify-content: center
-        align-items: center
-        font-weight: 500
-        font-size: 22px
-        letter-spacing: 0.1px
-        color: #FFFFFF
-
-    .testimonials
-        // display: flex
-        // flex-direction: column
-        // align-items: center
-        margin: 0 auto
-        max-width: 1125px
-
-    .testimonials__title
-        font-size: 46px
-        line-height: 57px
-        text-align: center
-        letter-spacing: 0.2px
-        color: #FFFFFF
-
-    .testimonials__body
-        display: grid
-        // grid-template: 1fr 1fr / repeat(5, 1fr)
-        grid-template-columns: repeat( auto-fit, minmax(335px, 1fr ))
-        grid-row-gap: 104px
-        grid-column-gap: 60px
-        margin: 90px 0 80px 0
-
-    // .testimonials__body-item.one
-    //     grid-row: 1 / 2
-    //     grid-column: 2 / 3
-    // .testimonials__body-item.two
-    //     grid-row: 1 / 2
-    //     grid-column: 3 / 4 
-    // .testimonials__body-item.three
-    //     grid-row: 1 / 2
-    //     grid-column: 4 / 5
-    // .testimonials__body-item.four
-    //     grid-row: 2 / 3
-    //     grid-column: 2 / 3
-    // .testimonials__body-item.five
-    //     grid-row: 2 / 3
-    //     grid-column: 3 / 4
-    // .testimonials__body-item.six
-    //     grid-row: 2 / 3
-    //     grid-column: 4 / 5
-
-    .testimonials__body-item
-        max-width: 335px
-        max-height: 541px
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        background: #FFFFFF
-        border: 1px solid #DEDEDE
-        box-sizing: border-box
-        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
-        border-radius: 10px
-        padding: 40px 41px
-
-    .testimonials__body-item>p
-        margin: 0
-        &:nth-child(2)
-            font-size: 18px
-            line-height: 27px
-            letter-spacing: 0.2px
-            color: #374754
-            padding: 40px 0 40px 0
-        &:nth-child(4)
-            font-size: 15px
-            line-height: 27px
-            letter-spacing: 0.2px
-            color: #08090a
-            padding: 30px 0 10px 0
-        &:nth-child(5)
-            font-weight: 900
-            font-size: 12px
-            line-height: 18px
-            letter-spacing: 0.1px
-            color: #374754
-            padding: 0 0 15px 0
-
-    .testimonials__button
-        width: 280px
-        height: 65px
-        background-color: #2091F9
-        border-radius: 35px
-        text-decoration: none
-        display: flex
-        justify-content: center
-        align-items: center
-        font-weight: 500
-        font-size: 22px
-        letter-spacing: 0.1px
-        color: #FFFFFF
-        margin: 0 auto      
-            
-    .pricing
-        display: flex
-        align-items: center
-        justify-content: space-evenly
-        flex-wrap: wrap
-        color: #FFFFFF
-        margin-top: 210px
-
-    .pricing__comment>p 
-        margin: 0
-        max-width: 360px
-        &:nth-child(1)
-            font-weight: 900
-            font-size: 55px
-            line-height: 65px
-            letter-spacing: 0.2px
-            padding-bottom: 26px
-        &:nth-child(2)
-            font-size: 18px
-            line-height: 27px
-            letter-spacing: 0.2px
-    .pricing__comment
-        margin: 0 0 70px 0
-
-                        
-    .pricing__price>p
-        margin: 0
-        &:nth-child(1)
-            font-weight: bold
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-        &:nth-child(2)
-            font-weight: bold
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-            padding: 19px 0
-        &:nth-child(3)
-            font-weight: bold
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-            padding: 0 0 40px 0
-    .pricing__price>p>span
-        font-weight: 900
-        font-size: 55px
-        line-height: 65px
-        letter-spacing: 0.2px
-        
-        
-    .pricing__button 
-        width: 159px
-        height: 52px
-        background-color: #2091F9
-        border-radius: 35px
-        text-decoration: none
-        display: flex
-        justify-content: center
-        align-items: center
-        font-weight: 500
-        font-size: 16px
-        letter-spacing: 0.2px
-        color: #FFFFFF
-
-    .contacts
-        display: flex
-        flex-direction: column
-        align-items: center
-        margin-top: 300px
-
-    .contacts__header
-        max-width: 318px
-        display: flex
-        flex-direction: column
-        align-items: center
-        color: #FFFFFF
-        margin: 0 0 65px 0
-        
-    .contacts__header>p
-        margin: 0
-        &:nth-child(1)
-            font-size: 46px
-            line-height: 57px
-            text-align: center
-            letter-spacing: 0.2px
-            padding: 0 0 25px 0
-        &:nth-child(2)
-            font-weight: bold
-            font-size: 16px
-            line-height: 20px
-            text-align: center
-            letter-spacing: 0.2px
-            padding: 0 0 65px 0
-            
-    .contacts__header-link>a
-        &:nth-child(2)
-            padding: 0 24px
-
-    .contacts__map>img
-        width: 100%
-        margin: 0 0 60px 0
-
-    .contacts__addres-row
-        display: flex
-        align-items: center
-        flex-wrap: wrap
-        color: #FFFFFF
-        margin: 0 0 60px 0
-
-    .addres__row-location
-        max-width: 208px
-        font-weight: bold
-        font-size: 12px
-        line-height: 18px
-        text-align: center
-        letter-spacing: 0.1px
-
-    .addres__row-phone
-        max-width: 87px
-        font-weight: bold
-        font-size: 12px
-        line-height: 18px
-        text-align: center
-        letter-spacing: 0.1px
-        padding: 0 35px
-
-    .addres__row-mail
-        max-width: 164px
-        font-weight: bold
-        font-size: 12px
-        line-height: 18px
-        text-align: center
-        letter-spacing: 0.1px
-
-    .contacts__form
-        display: flex
-        flex-direction: column
-        padding: 52px 50px
-        max-width: 868px
-        max-height: 670px
-        background: #FFFFFF
-        border: 1px solid #DDDDDD
-        box-sizing: border-box
-        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
-        border-radius: 20px 
-
-    .contacts__form>p
-        font-weight: bold
-        font-size: 22px
-        line-height: 33px
-        letter-spacing: 0.1px
-        text-align: center
-        color: #252B42
-        margin: 0
-        padding: 0 0 45px 0
-
-    .contacts__form-form
-        display: flex
-        flex-direction: column
-
-    .contacts__form-name
-        width: 768px
-        height: 54px
-        background: #F5F5F5
-        border: 1px solid #E8E8E8
-        box-sizing: border-box
-        border-radius: 39px
-        &::placeholder
-            font-size: 15px
-            line-height: 16px
-            letter-spacing: 0.1px
-            color: #18171D
-            padding: 0 0 0 20px
-
-    .contacts__form-mail
-        width: 768px
-        height: 54px
-        background: #F5F5F5
-        border: 1px solid #E8E8E8
-        box-sizing: border-box
-        border-radius: 39px
-        margin: 45px 0 45px 0
-        &::placeholder
-            font-size: 15px
-            line-height: 16px
-            letter-spacing: 0.1px
-            color: #18171D
-            padding: 0 0 0 20px
-
-    .contacts__form-text
-        width: 768px
-        height: 193px
-        background: #F5F5F5
-        border: 1px solid #E8E8E8
-        box-sizing: border-box
-        margin: 0 0 45px 0
-        &::placeholder
-            font-size: 15px
-            line-height: 16px
-            color: #18171D
-            padding: 23px 20px
-
-    .contacts__form-button
-        width: 145px
-        height: 52px
-        background: #2091F9
-        border-radius: 35px
-        border: none
-        font-weight: 500
-        font-size: 16px
-        line-height: 16px
-        letter-spacing: 0.2px
-        color: #FFFFFF
-
-
-@media screen and ( min-width: 767px )
-    .header__nav
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-        width: 422px
-        padding: 0 43px
-    .header__logo-nav-form
-        width: 100%
-        display: flex
-        align-items: center
-        justify-content: center
-        flex-wrap: wrap
-        padding: 47px 0
-    .header__content
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        color: #FFFFFF
-        margin-top: 100px
-    .header__content-title
-        font-weight: 900
-        font-size: 55px
-        letter-spacing: 0.7px
-        padding: 30px 0
-    .header__content-screen
-        display: flex
-        justify-content: center
-        margin: 200px 0 0 0
-
-    // main
-
-    .offer
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        margin: 140px 0 307px 0
-
-    .offer__title
-        text-align: center
-        color: #FFFFFF
-        margin: 95px 0 50px 0
-
-    .offer__title>p
-        margin: 0
-        &:nth-child(1)
-            font-size: 22px
-            line-height: 33px
-            letter-spacing: 0.4px
-        &:nth-child(2)
-            font-weight: normal
-            font-size: 46px
-            line-height: 57px
-            letter-spacing: 0.9px
-            margin: 17px 0
-        &:nth-child(3)
-            max-width: 318px
-            font-weight: 500
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-            margin: 0 auto
-
-    .offer__button
-        display: flex
-        flex-wrap: wrap
-        margin-top: 50px
-
-    .offer__button-buy
-        width: 124px
-        height: 52px
-        border-radius: 35px
-        background: #FFFFFF
-        letter-spacing: 0.2px
-        font-weight: bold
-        font-size: 16px
-        display: flex
-        align-items: center
-        justify-content: center
-        margin-top: 90px
-        color: #2091F9
-        text-decoration: none
-        margin: 0 8px 0 0
-
-    .offer__button-free
-        width: 172px
-        height: 52px
-        border-radius: 35px
-        border: 1px solid #FFFFFF
-        box-sizing: border-box
-        letter-spacing: 0.2px
-        font-weight: bold
-        font-size: 16px
-        display: flex
-        align-items: center
-        justify-content: center
-        margin-top: 90px
-        color: #FFFFFF
-        text-decoration: none
-        margin: 0 0 0 8px
-
-    .subscribe
-        display: flex
-        align-items: center
-        justify-content: center
-        flex-wrap: wrap
-        margin: 0 0 95px 0px
-        
-    .subscribe__image>img
-        max-width: 100%
-        margin: 0 40px 0 0
-    .subscribe__side
-        display: flex
-        flex-direction: column
-        max-width: 470px
-        color: #FFFFFF
-        margin: 0 0 0 40px
-
-    .subscribe__side-text
-        max-width: 100%
-
-    .subscribe__side-text>p
-        margin: 0 
-        &:nth-child(1)
-            font-weight: 500
-            font-size: 22px
-            line-height: 33px
-            letter-spacing: 0.1px
-
-        &:nth-child(2)
-            font-size: 46px
-            line-height: 57px
-            letter-spacing: 0.2px
-            padding: 17px 0 35px 0
-
-        &:nth-child(3)
-            font-weight: 500
-            font-size: 22px
-            line-height: 33px
-            letter-spacing: 0.1px
-
-        &:nth-child(4)
-            font-size: 18px
-            line-height: 27px
-            letter-spacing: 0.2px
-
-    .subscribe__form
-        padding-top: 35px
-            
-    .subscribe__email
-        height: 54px
-        width: 273px
-        border-radius: 28px
-        border: none
-        padding: 0 0 0 35px
-        background: #EFEFEF
-        &::placeholder
-            font-size: 14px
-            line-height: 16px
-            letter-spacing: 0.1px
-            color: #18171D
-
-
-    .subscribe__button
-        height: 54px
-        width: 141px
-        border-radius: 28px
-        border: none
-        background: #FFFFFF
-        margin: 0 0 0 12px
-        color: #2091F9
-        font-weight: 600
-        font-size: 16px
-        letter-spacing: 0.2px          
-
-    .features
-        display: flex
-        flex-direction: column
-        align-items: center
-        margin: 0 0 350px 0
-
-    .features__item-title
-        text-align: center
-        max-width: 318px
-        color: #FFFFFF
-        margin: 0 0 130px 0
-
-    .features__item-title>p
-        margin: 0
-        &:nth-child(1)
-            font-weight: 600
-            font-size: 22px
-            line-height: 33px
-            letter-spacing: 0.4px
-        &:nth-child(2)
-            font-weight: normal
-            font-size: 46px
-            line-height: 57px
-            letter-spacing: 0.9px
-            margin: 17px 0
-        &:nth-child(3)
-            font-weight: 500
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-            margin: 0 auto
-
-    .features__item-body
-        display: flex
-        justify-content: center
-        flex-wrap: wrap
-        width: 100%
-    .body__image>img
-        max-width: 100%
-        margin: 0 40px 0 0
-
-
-    .body__side
-        display: flex
-        justify-content: space-evenly
-        align-items: center
-        flex-direction: column
-        max-width: 255px
-        color: #FFFFFF
-        margin: 0 0 0 40px
-
-    .body__side-text>p
-        margin: 0
-
-    .side__text-title
-        background-image: url("./icon/ic_round-restaurant-menu.svg")
-        background-repeat: no-repeat
-        padding: 5px 0 0 50px
-        height: 53px
-        font-style: normal
-        font-weight: bold
-        font-size: 22px
-        line-height: 33px
-        letter-spacing: 0.6px
-
-    .side__text-body
-        font-weight: normal
-        font-size: 18px
-        line-height: 27px
-        letter-spacing: 0.2px
-        
-    .partners 
-        width: 100%
-        display: flex
-        flex-direction: column
-        align-items: center
-        margin: 0 0 200px 0
-
-    .partners__item-title>p
-        margin: 0
-        color: #FFFFFF
-        &:nth-child(1)
-            font-size: 46px
-            line-height: 57px
-            text-align: center
-            letter-spacing: 0.2px
-        &:nth-child(2)
-            max-width: 318px
-            font-weight: 500
-            font-size: 16px
-            line-height: 20px
-            text-align: center
-            letter-spacing: 0.2px
-            padding-top: 25px
-                
-    .partners__items-logo
-        display: flex
-        align-items: center
-        flex-wrap: wrap
-        margin: 100px 0
-
-    .partners__logo-link
-        padding: 0 40px
-
-    .partners__item-button
-        width: 236px
-        height: 65px
-        background-color: #2091F9
-        border-radius: 35px
-        text-decoration: none
-        display: flex
-        justify-content: center
-        align-items: center
-        font-weight: 500
-        font-size: 22px
-        letter-spacing: 0.1px
-        color: #FFFFFF
-
-    .testimonials
-        // display: flex
-        // flex-direction: column
-        // align-items: center
-        margin: 0 auto
-        max-width: 1125px
-
-    .testimonials__title
-        font-size: 46px
-        line-height: 57px
-        text-align: center
-        letter-spacing: 0.2px
-        color: #FFFFFF
-
-    .testimonials__body
-        display: grid
-        // grid-template: 1fr 1fr / repeat(5, 1fr)
-        grid-template-columns: repeat( auto-fit, minmax(335px, 1fr ))
-        grid-row-gap: 104px
-        grid-column-gap: 60px
-        margin: 90px 0 80px 0
-
-    // .testimonials__body-item.one
-    //     grid-row: 1 / 2
-    //     grid-column: 2 / 3
-    // .testimonials__body-item.two
-    //     grid-row: 1 / 2
-    //     grid-column: 3 / 4 
-    // .testimonials__body-item.three
-    //     grid-row: 1 / 2
-    //     grid-column: 4 / 5
-    // .testimonials__body-item.four
-    //     grid-row: 2 / 3
-    //     grid-column: 2 / 3
-    // .testimonials__body-item.five
-    //     grid-row: 2 / 3
-    //     grid-column: 3 / 4
-    // .testimonials__body-item.six
-    //     grid-row: 2 / 3
-    //     grid-column: 4 / 5
-
-    .testimonials__body-item
-        max-width: 335px
-        max-height: 541px
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        background: #FFFFFF
-        border: 1px solid #DEDEDE
-        box-sizing: border-box
-        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
-        border-radius: 10px
-        padding: 40px 41px
-
-    .testimonials__body-item>p
-        margin: 0
-        &:nth-child(2)
-            font-size: 18px
-            line-height: 27px
-            letter-spacing: 0.2px
-            color: #374754
-            padding: 40px 0 40px 0
-        &:nth-child(4)
-            font-size: 15px
-            line-height: 27px
-            letter-spacing: 0.2px
-            color: #08090a
-            padding: 30px 0 10px 0
-        &:nth-child(5)
-            font-weight: 900
-            font-size: 12px
-            line-height: 18px
-            letter-spacing: 0.1px
-            color: #374754
-            padding: 0 0 15px 0
-
-    .testimonials__button
-        width: 280px
-        height: 65px
-        background-color: #2091F9
-        border-radius: 35px
-        text-decoration: none
-        display: flex
-        justify-content: center
-        align-items: center
-        font-weight: 500
-        font-size: 22px
-        letter-spacing: 0.1px
-        color: #FFFFFF
-        margin: 0 auto      
-            
-    .pricing
-        display: flex
-        align-items: center
-        justify-content: space-evenly
-        flex-wrap: wrap
-        color: #FFFFFF
-        margin-top: 210px
-
-    .pricing__comment>p 
-        margin: 0
-        max-width: 360px
-        &:nth-child(1)
-            font-weight: 900
-            font-size: 55px
-            line-height: 65px
-            letter-spacing: 0.2px
-            padding-bottom: 26px
-        &:nth-child(2)
-            font-size: 18px
-            line-height: 27px
-            letter-spacing: 0.2px
-    .pricing__comment
-        margin: 0 0 70px 0
-
-                        
-    .pricing__price>p
-        margin: 0
-        &:nth-child(1)
-            font-weight: bold
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-        &:nth-child(2)
-            font-weight: bold
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-            padding: 19px 0
-        &:nth-child(3)
-            font-weight: bold
-            font-size: 16px
-            line-height: 20px
-            letter-spacing: 0.2px
-            padding: 0 0 40px 0
-    .pricing__price>p>span
-        font-weight: 900
-        font-size: 55px
-        line-height: 65px
-        letter-spacing: 0.2px
-        
-        
-    .pricing__button 
-        width: 159px
-        height: 52px
-        background-color: #2091F9
-        border-radius: 35px
-        text-decoration: none
-        display: flex
-        justify-content: center
-        align-items: center
-        font-weight: 500
-        font-size: 16px
-        letter-spacing: 0.2px
-        color: #FFFFFF
-
-    .contacts
-        display: flex
-        flex-direction: column
-        align-items: center
-        margin-top: 300px
-
-    .contacts__header
-        max-width: 318px
-        display: flex
-        flex-direction: column
-        align-items: center
-        color: #FFFFFF
-        margin: 0 0 65px 0
-        
-    .contacts__header>p
-        margin: 0
-        &:nth-child(1)
-            font-size: 46px
-            line-height: 57px
-            text-align: center
-            letter-spacing: 0.2px
-            padding: 0 0 25px 0
-        &:nth-child(2)
-            font-weight: bold
-            font-size: 16px
-            line-height: 20px
-            text-align: center
-            letter-spacing: 0.2px
-            padding: 0 0 65px 0
-            
-    .contacts__header-link>a
-        &:nth-child(2)
-            padding: 0 24px
-
-    .contacts__map>img
-        width: 100%
-        margin: 0 0 60px 0
-
-    .contacts__addres-row
-        display: flex
-        align-items: center
-        flex-wrap: wrap
-        color: #FFFFFF
-        margin: 0 0 60px 0
-
-    .addres__row-location
-        max-width: 208px
-        font-weight: bold
-        font-size: 12px
-        line-height: 18px
-        text-align: center
-        letter-spacing: 0.1px
-
-    .addres__row-phone
-        max-width: 87px
-        font-weight: bold
-        font-size: 12px
-        line-height: 18px
-        text-align: center
-        letter-spacing: 0.1px
-        padding: 0 35px
-
-    .addres__row-mail
-        max-width: 164px
-        font-weight: bold
-        font-size: 12px
-        line-height: 18px
-        text-align: center
-        letter-spacing: 0.1px
-
-    .contacts__form
-        display: flex
-        flex-direction: column
-        padding: 52px 50px
-        max-width: 868px
-        max-height: 670px
-        background: #FFFFFF
-        border: 1px solid #DDDDDD
-        box-sizing: border-box
-        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
-        border-radius: 20px 
-
-    .contacts__form>p
-        font-weight: bold
-        font-size: 22px
-        line-height: 33px
-        letter-spacing: 0.1px
-        text-align: center
-        color: #252B42
-        margin: 0
-        padding: 0 0 45px 0
-
-    .contacts__form-form
-        display: flex
-        flex-direction: column
-
-    .contacts__form-name
-        width: 768px
-        height: 54px
-        background: #F5F5F5
-        border: 1px solid #E8E8E8
-        box-sizing: border-box
-        border-radius: 39px
-        &::placeholder
-            font-size: 15px
-            line-height: 16px
-            letter-spacing: 0.1px
-            color: #18171D
-            padding: 0 0 0 20px
-
-    .contacts__form-mail
-        width: 768px
-        height: 54px
-        background: #F5F5F5
-        border: 1px solid #E8E8E8
-        box-sizing: border-box
-        border-radius: 39px
-        margin: 45px 0 45px 0
-        &::placeholder
-            font-size: 15px
-            line-height: 16px
-            letter-spacing: 0.1px
-            color: #18171D
-            padding: 0 0 0 20px
-
-    .contacts__form-text
-        width: 768px
-        height: 193px
-        background: #F5F5F5
-        border: 1px solid #E8E8E8
-        box-sizing: border-box
-        margin: 0 0 45px 0
-        &::placeholder
-            font-size: 15px
-            line-height: 16px
-            color: #18171D
-            padding: 23px 20px
-
-    .contacts__form-button
-        width: 145px
-        height: 52px
-        background: #2091F9
-        border-radius: 35px
-        border: none
-        font-weight: 500
-        font-size: 16px
-        line-height: 16px
-        letter-spacing: 0.2px
-        color: #FFFFFF    
-
-
 .nav__login
-    display: none
-
-.nav__link>a
+    display: none    
+.header__logo-nav-form
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    padding: 47px 0
+.header__nav
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 422px
+    padding: 0 43px
+    
+.nav__link
     text-decoration: none
     font-size: 15px
     line-height: 27px
@@ -1293,7 +107,7 @@ body
     letter-spacing: 0.2px
     color: #ffffff
 
-.nav__link>a:hover
+.nav__link:hover
     color: #15e48d
     text-shadow: 3px 5px 5px red
 
@@ -1323,12 +137,12 @@ body
     letter-spacing: 0.2px
 
 .header__content
-    // display: flex
-    // flex-direction: column
-    // align-items: center
-    // text-align: center
-    // color: #FFFFFF
-    // margin-top: 100px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+    margin-top: 100px
 
 .header__content>p
     margin: 0
@@ -1339,10 +153,10 @@ body
     letter-spacing: 0.3px
    
 .header__content-title
-    // font-weight: 900
-    // font-size: 55px
-    // letter-spacing: 0.7px
-    // padding: 30px 0
+    font-weight: 900
+    font-size: 55px
+    letter-spacing: 0.7px
+    padding: 30px 0
     
 .header__content-body
     max-width: 449px
@@ -1366,581 +180,622 @@ body
     text-decoration: none
     
 .header__content-screen
-    // display: flex
-    // justify-content: center
-    // margin: 200px 0 0 0
+    display: flex
+    justify-content: center
+    padding: 200px 0 0 0
+    width: 90%
+    margin: 0 auto
 
 .header__content-screen>img
     max-width: 100%
     
-// .offer
-//     display: flex
-//     flex-direction: column
-//     align-items: center
-//     text-align: center
-//     margin: 140px 0 307px 0
-
-// .offer__title
-//     text-align: center
-//     color: #FFFFFF
-//     margin: 95px 0 50px 0
-
-// .offer__title>p
-//     margin: 0
-//     &:nth-child(1)
-//         font-size: 22px
-//         line-height: 33px
-//         letter-spacing: 0.4px
-//     &:nth-child(2)
-//         font-weight: normal
-//         font-size: 46px
-//         line-height: 57px
-//         letter-spacing: 0.9px
-//         margin: 17px 0
-//     &:nth-child(3)
-//         max-width: 318px
-//         font-weight: 500
-//         font-size: 16px
-//         line-height: 20px
-//         letter-spacing: 0.2px
-//         margin: 0 auto
-
-// .offer__button
-//     display: flex
-//     flex-wrap: wrap
-//     margin-top: 50px
-
-// .offer__button-buy
-//     width: 124px
-//     height: 52px
-//     border-radius: 35px
-//     background: #FFFFFF
-//     letter-spacing: 0.2px
-//     font-weight: bold
-//     font-size: 16px
-//     display: flex
-//     align-items: center
-//     justify-content: center
-//     margin-top: 90px
-//     color: #2091F9
-//     text-decoration: none
-//     margin: 0 8px 0 0
-
-// .offer__button-free
-//     width: 172px
-//     height: 52px
-//     border-radius: 35px
-//     border: 1px solid #FFFFFF
-//     box-sizing: border-box
-//     letter-spacing: 0.2px
-//     font-weight: bold
-//     font-size: 16px
-//     display: flex
-//     align-items: center
-//     justify-content: center
-//     margin-top: 90px
-//     color: #FFFFFF
-//     text-decoration: none
-//     margin: 0 0 0 8px
-
-// .subscribe
-//     display: flex
-//     align-items: center
-//     justify-content: center
-//     flex-wrap: wrap
-//     margin: 0 0 95px 0px
+.offer
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin: 140px 0 307px 0
+@media ( max-width: 1024px )
+    .offer
+        margin: 40px 0 207px 0
     
-// .subscribe__image>img
-//     max-width: 100%
-//     margin: 0 40px 0 0
-// .subscribe__side
-//     display: flex
-//     flex-direction: column
-//     max-width: 470px
-//     color: #FFFFFF
-//     margin: 0 0 0 40px
+.offer__title
+    text-align: center
+    color: #FFFFFF
+    margin: 95px 0 50px 0
 
-// .subscribe__side-text
-//     max-width: 100%
+.offer__title>p
+    margin: 0
+    &:nth-child(1)
+        font-size: 22px
+        line-height: 33px
+        letter-spacing: 0.4px
+    &:nth-child(2)
+        font-weight: normal
+        font-size: 46px
+        line-height: 57px
+        letter-spacing: 0.9px
+        margin: 17px 0
+    &:nth-child(3)
+        max-width: 318px
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+        margin: 0 auto
 
-// .subscribe__side-text>p
-//     margin: 0 
-//     &:nth-child(1)
-//         font-weight: 500
-//         font-size: 22px
-//         line-height: 33px
-//         letter-spacing: 0.1px
+.offer__button
+    display: flex
+    flex-wrap: wrap
+    margin-top: 50px
 
-//     &:nth-child(2)
-//         font-size: 46px
-//         line-height: 57px
-//         letter-spacing: 0.2px
-//         padding: 17px 0 35px 0
-
-//     &:nth-child(3)
-//         font-weight: 500
-//         font-size: 22px
-//         line-height: 33px
-//         letter-spacing: 0.1px
-
-//     &:nth-child(4)
-//         font-size: 18px
-//         line-height: 27px
-//         letter-spacing: 0.2px
-
-// .subscribe__form
-//     padding-top: 35px
+.offer__button-buy
+    width: 124px
+    height: 52px
+    border-radius: 35px
+    background: #FFFFFF
+    letter-spacing: 0.2px
+    font-weight: bold
+    font-size: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 90px
+    color: #2091F9
+    text-decoration: none
+    margin: 0 8px 0 0
         
-// .subscribe__email
-//     height: 54px
-//     width: 273px
-//     border-radius: 28px
-//     border: none
-//     padding: 0 0 0 35px
-//     background: #EFEFEF
-//     &::placeholder
-//         font-size: 14px
-//         line-height: 16px
-//         letter-spacing: 0.1px
-//         color: #18171D
+.offer__button-free
+    width: 172px
+    height: 52px
+    border-radius: 35px
+    border: 1px solid #FFFFFF
+    box-sizing: border-box
+    letter-spacing: 0.2px
+    font-weight: bold
+    font-size: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 90px
+    color: #FFFFFF
+    text-decoration: none
+    margin: 0 0 0 8px
 
-
-// .subscribe__button
-//     height: 54px
-//     width: 141px
-//     border-radius: 28px
-//     border: none
-//     background: #FFFFFF
-//     margin: 0 0 0 12px
-//     color: #2091F9
-//     font-weight: 600
-//     font-size: 16px
-//     letter-spacing: 0.2px          
-
-// .features
-//     display: flex
-//     flex-direction: column
-//     align-items: center
-//     margin: 0 0 350px 0
-
-// .features__item-title
-//     text-align: center
-//     max-width: 318px
-//     color: #FFFFFF
-//     margin: 0 0 130px 0
-
-// .features__item-title>p
-//     margin: 0
-//     &:nth-child(1)
-//         font-weight: 600
-//         font-size: 22px
-//         line-height: 33px
-//         letter-spacing: 0.4px
-//     &:nth-child(2)
-//         font-weight: normal
-//         font-size: 46px
-//         line-height: 57px
-//         letter-spacing: 0.9px
-//         margin: 17px 0
-//     &:nth-child(3)
-//         font-weight: 500
-//         font-size: 16px
-//         line-height: 20px
-//         letter-spacing: 0.2px
-//         margin: 0 auto
-
-// .features__item-body
-//     display: flex
-//     justify-content: center
-//     flex-wrap: wrap
-//     width: 100%
-// .body__image>img
-//     max-width: 100%
-//     margin: 0 40px 0 0
-
-
-// .body__side
-//     display: flex
-//     justify-content: space-evenly
-//     align-items: center
-//     flex-direction: column
-//     max-width: 255px
-//     color: #FFFFFF
-//     margin: 0 0 0 40px
-
-// .body__side-text>p
-//     margin: 0
-
-// .side__text-title
-//     background-image: url("./icon/ic_round-restaurant-menu.svg")
-//     background-repeat: no-repeat
-//     padding: 5px 0 0 50px
-//     height: 53px
-//     font-style: normal
-//     font-weight: bold
-//     font-size: 22px
-//     line-height: 33px
-//     letter-spacing: 0.6px
-
-// .side__text-body
-//     font-weight: normal
-//     font-size: 18px
-//     line-height: 27px
-//     letter-spacing: 0.2px
+.subscribe
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    margin: 0 0 95px 0px
     
-// .partners 
-//     width: 100%
-//     display: flex
-//     flex-direction: column
-//     align-items: center
-//     margin: 0 0 200px 0
+.subscribe__image>img
+    max-width: 100%
+    padding: 0 40px 0 0
+@media ( max-width: 1024px )
+    .subscribe__image>img
+        padding: 0 0 50px 0
+        margin: 0
+    
+.subscribe__side
+    display: flex
+    flex-direction: column
+    max-width: 470px
+    color: #FFFFFF
+    margin: 0 0 0 40px
+@media ( max-width: 1024px )
+    .subscribe__side
+        margin: 0
+        text-align: center
 
-// .partners__item-title>p
-//     margin: 0
-//     color: #FFFFFF
-//     &:nth-child(1)
-//         font-size: 46px
-//         line-height: 57px
-//         text-align: center
-//         letter-spacing: 0.2px
-//     &:nth-child(2)
-//         max-width: 318px
-//         font-weight: 500
-//         font-size: 16px
-//         line-height: 20px
-//         text-align: center
-//         letter-spacing: 0.2px
-//         padding-top: 25px
+.subscribe__side-text
+    max-width: 100%
+
+.subscribe__side-text>p
+    margin: 0 
+    &:nth-child(1)
+        font-weight: 500
+        font-size: 22px
+        line-height: 33px
+        letter-spacing: 0.1px
+
+    &:nth-child(2)
+        font-size: 46px
+        line-height: 57px
+        letter-spacing: 0.2px
+        padding: 17px 0 35px 0
+
+    &:nth-child(3)
+        font-weight: 500
+        font-size: 22px
+        line-height: 33px
+        letter-spacing: 0.1px
+
+    &:nth-child(4)
+        font-size: 18px
+        line-height: 27px
+        letter-spacing: 0.2px
+
+.subscribe__form
+    padding-top: 35px
+        
+.subscribe__email
+    height: 54px
+    width: 273px
+    border-radius: 28px
+    border: none
+    padding: 0 0 0 35px
+    background: #EFEFEF
+    &::placeholder
+        font-size: 14px
+        line-height: 16px
+        letter-spacing: 0.1px
+        color: #18171D
+
+.subscribe__button
+    height: 54px
+    width: 141px
+    border-radius: 28px
+    border: none
+    background: #FFFFFF
+    margin: 0 0 0 12px
+    color: #2091F9
+    font-weight: 600
+    font-size: 16px
+    letter-spacing: 0.2px          
+
+.features
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 0 350px 0
+@media ( max-width: 1024px )
+    .features
+        margin: 0 0 200px 0
+        
+.features__item-title
+    text-align: center
+    max-width: 318px
+    color: #FFFFFF
+    margin: 0 0 130px 0
+
+.features__item-title>p
+    margin: 0
+    &:nth-child(1)
+        font-weight: 600
+        font-size: 22px
+        line-height: 33px
+        letter-spacing: 0.4px
+    &:nth-child(2)
+        font-weight: normal
+        font-size: 46px
+        line-height: 57px
+        letter-spacing: 0.9px
+        margin: 17px 0
+    &:nth-child(3)
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+        margin: 0 auto
+
+.features__item-body
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+.body__image>img
+    max-width: 100%
+    margin: 0 40px 0 0
+    @media ( max-width: 1024px )
+        margin: 0
+.body__image
+    @media ( max-width: 1024px )
+        width: 90%
+      
+.body__side
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    flex-direction: column
+    max-width: 255px
+    color: #FFFFFF
+    margin: 0 0 0 40px
+@media (max-width: 1024px)
+    .body__side
+        margin: 50px 0 0 0
+
+.body__side-text>p
+    margin: 0
+@media ( max-width: 1024px )
+    .body__side-text
+        padding: 50px 0 0 0
+    
+.side__text-title
+    background-image: url("./icon/ic_round-restaurant-menu.svg")
+    background-repeat: no-repeat
+    padding: 5px 0 0 50px
+    height: 53px
+    font-style: normal
+    font-weight: bold
+    font-size: 22px
+    line-height: 33px
+    letter-spacing: 0.6px
+
+.side__text-body
+    font-weight: normal
+    font-size: 18px
+    line-height: 27px
+    letter-spacing: 0.2px
+    
+.partners 
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 0 200px 0
+
+.partners__item-title>p
+    margin: 0
+    color: #FFFFFF
+    &:nth-child(1)
+        font-size: 46px
+        line-height: 57px
+        text-align: center
+        letter-spacing: 0.2px
+    &:nth-child(2)
+        max-width: 318px
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+        padding-top: 25px
             
-// .partners__items-logo
-//     display: flex
-//     align-items: center
-//     flex-wrap: wrap
-//     margin: 100px 0
+.partners__items-logo
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 100px 0
 
-// .partners__logo-link
-//     padding: 0 40px
+.partners__logo-link
+    padding: 0 40px
+@media ( max-width: 1024px )
+    .partners__logo-link
+        margin: 0 auto
+        &:nth-child(7)
+            padding: 50px 0 0 17px
+@media ( max-width: 768px )
+    .partners__logo-link
+        &:nth-child(6)
+            padding: 50px 0 0 200px
+        &:nth-child(7)
+            padding: 50px 200px 0 0
+    
+.partners__item-button
+    width: 236px
+    height: 65px
+    background-color: #2091F9
+    border-radius: 35px
+    text-decoration: none
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 500
+    font-size: 22px
+    letter-spacing: 0.1px
+    color: #FFFFFF
 
-// .partners__item-button
-//     width: 236px
-//     height: 65px
-//     background-color: #2091F9
-//     border-radius: 35px
-//     text-decoration: none
-//     display: flex
-//     justify-content: center
-//     align-items: center
-//     font-weight: 500
-//     font-size: 22px
-//     letter-spacing: 0.1px
-//     color: #FFFFFF
+.testimonials
+    margin: 0 auto
+    max-width: 1125px
 
-// .testimonials
-//     // display: flex
-//     // flex-direction: column
-//     // align-items: center
-//     margin: 0 auto
-//     max-width: 1125px
+.testimonials__title
+    font-size: 46px
+    line-height: 57px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #FFFFFF
 
-// .testimonials__title
-//     font-size: 46px
-//     line-height: 57px
-//     text-align: center
-//     letter-spacing: 0.2px
-//     color: #FFFFFF
+.testimonials__body
+    display: grid
+    grid-template-columns: repeat( auto-fit, minmax(335px, 1fr ))
+    grid-row-gap: 104px
+    grid-column-gap: 60px
+    margin: 90px 0 80px 0
+    justify-items: center
+@media ( max-width: 1124px )
+    .testimonials__body
+        grid-column-gap: 0px    
 
-// .testimonials__body
-//     display: grid
-//     // grid-template: 1fr 1fr / repeat(5, 1fr)
-//     grid-template-columns: repeat( auto-fit, minmax(335px, 1fr ))
-//     grid-row-gap: 104px
-//     grid-column-gap: 60px
-//     margin: 90px 0 80px 0
+.testimonials__body-item
+    max-width: 335px
+    max-height: 541px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    background: #FFFFFF
+    border: 1px solid #DEDEDE
+    box-sizing: border-box
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
+    border-radius: 10px
+    padding: 40px 41px
 
-// // .testimonials__body-item.one
-// //     grid-row: 1 / 2
-// //     grid-column: 2 / 3
-// // .testimonials__body-item.two
-// //     grid-row: 1 / 2
-// //     grid-column: 3 / 4 
-// // .testimonials__body-item.three
-// //     grid-row: 1 / 2
-// //     grid-column: 4 / 5
-// // .testimonials__body-item.four
-// //     grid-row: 2 / 3
-// //     grid-column: 2 / 3
-// // .testimonials__body-item.five
-// //     grid-row: 2 / 3
-// //     grid-column: 3 / 4
-// // .testimonials__body-item.six
-// //     grid-row: 2 / 3
-// //     grid-column: 4 / 5
+.testimonials__body-item>p
+    margin: 0
+    &:nth-child(2)
+        font-size: 18px
+        line-height: 27px
+        letter-spacing: 0.2px
+        color: #374754
+        padding: 40px 0 40px 0
+    &:nth-child(4)
+        font-size: 15px
+        line-height: 27px
+        letter-spacing: 0.2px
+        color: #08090a
+        padding: 30px 0 10px 0
+    &:nth-child(5)
+        font-weight: 900
+        font-size: 12px
+        line-height: 18px
+        letter-spacing: 0.1px
+        color: #374754
+        padding: 0 0 15px 0
 
-// .testimonials__body-item
-//     max-width: 335px
-//     max-height: 541px
-//     display: flex
-//     flex-direction: column
-//     align-items: center
-//     text-align: center
-//     background: #FFFFFF
-//     border: 1px solid #DEDEDE
-//     box-sizing: border-box
-//     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
-//     border-radius: 10px
-//     padding: 40px 41px
-
-// .testimonials__body-item>p
-//     margin: 0
-//     &:nth-child(2)
-//         font-size: 18px
-//         line-height: 27px
-//         letter-spacing: 0.2px
-//         color: #374754
-//         padding: 40px 0 40px 0
-//     &:nth-child(4)
-//         font-size: 15px
-//         line-height: 27px
-//         letter-spacing: 0.2px
-//         color: #08090a
-//         padding: 30px 0 10px 0
-//     &:nth-child(5)
-//         font-weight: 900
-//         font-size: 12px
-//         line-height: 18px
-//         letter-spacing: 0.1px
-//         color: #374754
-//         padding: 0 0 15px 0
-
-// .testimonials__button
-//     width: 280px
-//     height: 65px
-//     background-color: #2091F9
-//     border-radius: 35px
-//     text-decoration: none
-//     display: flex
-//     justify-content: center
-//     align-items: center
-//     font-weight: 500
-//     font-size: 22px
-//     letter-spacing: 0.1px
-//     color: #FFFFFF
-//     margin: 0 auto      
+.testimonials__button
+    width: 280px
+    height: 65px
+    background-color: #2091F9
+    border-radius: 35px
+    text-decoration: none
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 500
+    font-size: 22px
+    letter-spacing: 0.1px
+    color: #FFFFFF
+    margin: 0 auto      
         
-// .pricing
-//     display: flex
-//     align-items: center
-//     justify-content: space-evenly
-//     flex-wrap: wrap
-//     color: #FFFFFF
-//     margin-top: 210px
+.pricing
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    flex-wrap: wrap
+    color: #FFFFFF
+    margin-top: 210px
 
-// .pricing__comment>p 
-//     margin: 0
-//     max-width: 360px
-//     &:nth-child(1)
-//         font-weight: 900
-//         font-size: 55px
-//         line-height: 65px
-//         letter-spacing: 0.2px
-//         padding-bottom: 26px
-//     &:nth-child(2)
-//         font-size: 18px
-//         line-height: 27px
-//         letter-spacing: 0.2px
-// .pricing__comment
-//     margin: 0 0 70px 0
+.pricing__comment>p 
+    margin: 0
+    max-width: 360px
+    &:nth-child(1)
+        font-weight: 900
+        font-size: 55px
+        line-height: 65px
+        letter-spacing: 0.2px
+        padding-bottom: 26px
+    &:nth-child(2)
+        font-size: 18px
+        line-height: 27px
+        letter-spacing: 0.2px
+.pricing__comment
+    margin: 0 0 70px 0
 
                      
-// .pricing__price>p
-//     margin: 0
-//     &:nth-child(1)
-//         font-weight: bold
-//         font-size: 16px
-//         line-height: 20px
-//         letter-spacing: 0.2px
-//     &:nth-child(2)
-//         font-weight: bold
-//         font-size: 16px
-//         line-height: 20px
-//         letter-spacing: 0.2px
-//         padding: 19px 0
-//     &:nth-child(3)
-//         font-weight: bold
-//         font-size: 16px
-//         line-height: 20px
-//         letter-spacing: 0.2px
-//         padding: 0 0 40px 0
-// .pricing__price>p>span
-//     font-weight: 900
-//     font-size: 55px
-//     line-height: 65px
-//     letter-spacing: 0.2px
+.pricing__price>p
+    margin: 0
+    &:nth-child(1)
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+    &:nth-child(2)
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+        padding: 19px 0
+    &:nth-child(3)
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+        padding: 0 0 40px 0
+.pricing__price>p>span
+    font-weight: 900
+    font-size: 55px
+    line-height: 65px
+    letter-spacing: 0.2px
     
     
-// .pricing__button 
-//     width: 159px
-//     height: 52px
-//     background-color: #2091F9
-//     border-radius: 35px
-//     text-decoration: none
-//     display: flex
-//     justify-content: center
-//     align-items: center
-//     font-weight: 500
-//     font-size: 16px
-//     letter-spacing: 0.2px
-//     color: #FFFFFF
+.pricing__button 
+    width: 159px
+    height: 52px
+    background-color: #2091F9
+    border-radius: 35px
+    text-decoration: none
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 500
+    font-size: 16px
+    letter-spacing: 0.2px
+    color: #FFFFFF
 
-// .contacts
-//     display: flex
-//     flex-direction: column
-//     align-items: center
-//     margin-top: 300px
-
-// .contacts__header
-//     max-width: 318px
-//     display: flex
-//     flex-direction: column
-//     align-items: center
-//     color: #FFFFFF
-//     margin: 0 0 65px 0
+.contacts
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 300px
+@media ( max-width: 1024px )
+    .contacts
+        margin-top: 200px
     
-// .contacts__header>p
-//     margin: 0
-//     &:nth-child(1)
-//         font-size: 46px
-//         line-height: 57px
-//         text-align: center
-//         letter-spacing: 0.2px
-//         padding: 0 0 25px 0
-//     &:nth-child(2)
-//         font-weight: bold
-//         font-size: 16px
-//         line-height: 20px
-//         text-align: center
-//         letter-spacing: 0.2px
-//         padding: 0 0 65px 0
+
+.contacts__header
+    max-width: 318px
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: #FFFFFF
+    margin: 0 0 65px 0
+    
+.contacts__header>p
+    margin: 0
+    &:nth-child(1)
+        font-size: 46px
+        line-height: 57px
+        text-align: center
+        letter-spacing: 0.2px
+        padding: 0 0 25px 0
+    &:nth-child(2)
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+        padding: 0 0 65px 0
         
-// .contacts__header-link>a
-//     &:nth-child(2)
-//         padding: 0 24px
+.contacts__header-link>a
+    &:nth-child(2)
+        padding: 0 24px
 
-// .contacts__map>img
-//     width: 100%
-//     margin: 0 0 60px 0
+.contacts__map>img
+    width: 100%
+    margin: 0 0 60px 0
+@media ( max-width: 900px )
+    .contacts__map
+        width: 90%
+    
 
-// .contacts__addres-row
-//     display: flex
-//     align-items: center
-//     flex-wrap: wrap
-//     color: #FFFFFF
-//     margin: 0 0 60px 0
+.contacts__addres-row
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    color: #FFFFFF
+    margin: 0 0 60px 0
 
-// .addres__row-location
-//     max-width: 208px
-//     font-weight: bold
-//     font-size: 12px
-//     line-height: 18px
-//     text-align: center
-//     letter-spacing: 0.1px
+.addres__row-location
+    max-width: 208px
+    font-weight: bold
+    font-size: 12px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.1px
 
-// .addres__row-phone
-//     max-width: 87px
-//     font-weight: bold
-//     font-size: 12px
-//     line-height: 18px
-//     text-align: center
-//     letter-spacing: 0.1px
-//     padding: 0 35px
+.addres__row-phone
+    max-width: 87px
+    font-weight: bold
+    font-size: 12px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.1px
+    padding: 0 35px
 
-// .addres__row-mail
-//     max-width: 164px
-//     font-weight: bold
-//     font-size: 12px
-//     line-height: 18px
-//     text-align: center
-//     letter-spacing: 0.1px
+.addres__row-mail
+    max-width: 164px
+    font-weight: bold
+    font-size: 12px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.1px
 
-// .contacts__form
-//     display: flex
-//     flex-direction: column
-//     padding: 52px 50px
-//     max-width: 868px
-//     max-height: 670px
-//     background: #FFFFFF
-//     border: 1px solid #DDDDDD
-//     box-sizing: border-box
-//     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
-//     border-radius: 20px 
+.contacts__form
+    display: flex
+    flex-direction: column
+    padding: 52px 50px
+    max-width: 868px
+    max-height: 670px
+    background: #FFFFFF
+    border: 1px solid #DDDDDD
+    box-sizing: border-box
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
+    border-radius: 20px
+@media ( max-width: 915px )
+    .contacts__form
+        width: 95%
+    
 
-// .contacts__form>p
-//     font-weight: bold
-//     font-size: 22px
-//     line-height: 33px
-//     letter-spacing: 0.1px
-//     text-align: center
-//     color: #252B42
-//     margin: 0
-//     padding: 0 0 45px 0
+.contacts__form>p
+    font-weight: bold
+    font-size: 22px
+    line-height: 33px
+    letter-spacing: 0.1px
+    text-align: center
+    color: #252B42
+    margin: 0
+    padding: 0 0 45px 0
 
-// .contacts__form-form
-//     display: flex
-//     flex-direction: column
+.contacts__form-form
+    display: flex
+    flex-direction: column
 
-// .contacts__form-name
-//     width: 768px
-//     height: 54px
-//     background: #F5F5F5
-//     border: 1px solid #E8E8E8
-//     box-sizing: border-box
-//     border-radius: 39px
-//     &::placeholder
-//         font-size: 15px
-//         line-height: 16px
-//         letter-spacing: 0.1px
-//         color: #18171D
-//         padding: 0 0 0 20px
+.contacts__form-name
+    width: 768px
+    height: 54px
+    background: #F5F5F5
+    border: 1px solid #E8E8E8
+    box-sizing: border-box
+    border-radius: 39px
+    &::placeholder
+        font-size: 15px
+        line-height: 16px
+        letter-spacing: 0.1px
+        color: #18171D
+        padding: 0 0 0 20px
+@media ( max-width: 915px )
+    .contacts__form-name
+        width: 100%
+    
+    
 
-// .contacts__form-mail
-//     width: 768px
-//     height: 54px
-//     background: #F5F5F5
-//     border: 1px solid #E8E8E8
-//     box-sizing: border-box
-//     border-radius: 39px
-//     margin: 45px 0 45px 0
-//     &::placeholder
-//         font-size: 15px
-//         line-height: 16px
-//         letter-spacing: 0.1px
-//         color: #18171D
-//         padding: 0 0 0 20px
+.contacts__form-mail
+    width: 768px
+    height: 54px
+    background: #F5F5F5
+    border: 1px solid #E8E8E8
+    box-sizing: border-box
+    border-radius: 39px
+    margin: 45px 0 45px 0
+    &::placeholder
+        font-size: 15px
+        line-height: 16px
+        letter-spacing: 0.1px
+        color: #18171D
+        padding: 0 0 0 20px
+@media ( max-width: 915px )
+    .contacts__form-mail
+        width: 100%
 
-// .contacts__form-text
-//     width: 768px
-//     height: 193px
-//     background: #F5F5F5
-//     border: 1px solid #E8E8E8
-//     box-sizing: border-box
-//     margin: 0 0 45px 0
-//     &::placeholder
-//         font-size: 15px
-//         line-height: 16px
-//         color: #18171D
-//         padding: 23px 20px
+.contacts__form-text
+    width: 768px
+    height: 193px
+    background: #F5F5F5
+    border: 1px solid #E8E8E8
+    box-sizing: border-box
+    margin: 0 0 45px 0
+    &::placeholder
+        font-size: 15px
+        line-height: 16px
+        color: #18171D
+        padding: 23px 20px
+@media ( max-width: 915px )
+    .contacts__form-text
+        width: 100%
 
-// .contacts__form-button
-//     width: 145px
-//     height: 52px
-//     background: #2091F9
-//     border-radius: 35px
-//     border: none
-//     font-weight: 500
-//     font-size: 16px
-//     line-height: 16px
-//     letter-spacing: 0.2px
-//     color: #FFFFFF
+.contacts__form-button
+    width: 145px
+    height: 52px
+    background: #2091F9
+    border-radius: 35px
+    border: none
+    font-weight: 500
+    font-size: 16px
+    line-height: 16px
+    letter-spacing: 0.2px
+    color: #FFFFFF
 
 .footer
     padding-bottom: 131px 
@@ -1951,7 +806,14 @@ body
     flex-wrap: wrap
     max-width: 1036px
     margin: 0 auto
-
+@media ( max-width: 1024px )
+    .footer__item
+        display: flex
+        flex-wrap: wrap
+        max-width: 1036px
+        margin: 0 auto
+        justify-content: center
+    
 .footer__item-links
     width: 583px
     display: flex
@@ -1993,6 +855,12 @@ body
         font-size: 18px
         line-height: 27px
         letter-spacing: 0.2px
+@media ( max-width: 935px )
+    .footer__item-side
+        padding-top: 100px
+        display: flex
+        flex-direction: column
+        align-items: center    
         
 .item__side-icon>a
     padding: 0 14px 0 0
@@ -2026,9 +894,4 @@ body
     line-height: 16px
     letter-spacing: 0.2px
     color: #FFFFFF
-    
-        
-        
-
-
-    
+    border: none
